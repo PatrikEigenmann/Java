@@ -113,6 +113,12 @@ public class SmallRotor extends Rotor implements IVersionable {
         rotor[i++] = '7';
         rotor[i++] = '8';
         rotor[i] = '9';
+<<<<<<< Upstream, based on branch 'JavaDev' of https://github.com/PatrikEigenmann/Java
+=======
+
+
+        //JMessageHandler.writeMessage("Finished Initializing Small Rotor!");
+>>>>>>> e8f7892 Try to get from Repository.
     }
 
 }
