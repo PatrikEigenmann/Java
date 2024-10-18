@@ -1,6 +1,3 @@
-#include <stdio.h>
-#include <stdlib.h>
-
 /* ***************************************************************************************************
  * jEnigma.c - Starter Programm to run a Java application.
  * Please rename all <name> tags with the actual name of the java class, replace <day> and <date>
@@ -17,14 +14,19 @@
  * Mon 2024-10-14 Optimized for Mac OS.														Version: 00.04
  * Fri 2024-10-18 Corrected Windows and MacOS version. Just uncommand which ever you need.	Version: 00.05
  * ***************************************************************************************************/
+#include <stdio.h>
+#include <stdlib.h>
 
 int main (int argc, char **argv) {
 
     // calling the java virtual machine on command line level but also hide the command line promt.
-    // Windows:             "> NUL 2>&1" to hide the command prompt.
-    // Linux/Unix/MacOS:    "> /dev/null 2>&1" to hide the command promt.
-    // MacOS -> for some reason, /dev/null 2>&1 gives me an error message and does not work.
+    // Windows:             "> D:\Development\Java is the path to my projects.
+    // Linux/Unix:			"> /home/patrik/development/Java is the path to my projects.
+    // MacOS 				-> /Users/patrik/development/Java is the path to my projects..
+    
+    /* Please uncommand which ever fits your needs, and or change the path to your projects. */
     // system("java -classpath \"D:\\Development\\Java\\Samael;.\" jEnigma");			// Windows
     // system("java -classpath \"/Users/patrik/development/java/Samael:./\" jEnigma"); 	// MacOS
+    // system("java -classpath \"/home/patrik/development/java/Samael:./\" jEnigma"); 	// Linux
     return 0;
 }
