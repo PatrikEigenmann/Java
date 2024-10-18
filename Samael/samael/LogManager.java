@@ -117,10 +117,12 @@ public class LogManager implements IVersionable {
      * @param componentClass The class from which the log message originated.
      */
     public static void writeMessage(String message, int type, Class<?> process, Class<?> componentClass) {
-        PrintWriter out = null;
         if((internal_flag & type) == type) {	
-	        try {
-	            String logFile = LOG_DIR + "/samael.csv";
+
+            PrintWriter out = null;
+        	try {
+
+	        	String logFile = LOG_DIR + "/samael.csv";
 	            out = new PrintWriter(new BufferedWriter(new FileWriter(logFile, true)));
 	            
 	            String sDate = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(new Date());
