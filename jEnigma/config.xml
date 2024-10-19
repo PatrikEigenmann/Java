@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<configuration>
+	<!-- Application configuration -->
+	<parameter name="appName">The Enigma Encrypter</parameter>
+	<parameter name="about.Title">About</parameter>
+</configuration>
