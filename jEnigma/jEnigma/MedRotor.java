@@ -113,19 +113,6 @@ public class MedRotor extends Rotor implements IVersionable{
         rotor[i++] = 'q';
         rotor[i++] = 'v';
         rotor[i] = '1';
-<<<<<<< Upstream, based on branch 'JavaDev' of https://github.com/PatrikEigenmann/Java
 
-=======
-        
-        
-        
-        
-        
-        
-        
-        
-
-        //JMessageHandler.writeMessage("Finished Initializing Med Rotor!");
->>>>>>> e8f7892 Try to get from Repository.
     }
 }

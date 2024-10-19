@@ -113,10 +113,5 @@ public class LargeRotor extends Rotor {
         rotor[i++] = 'u';
         rotor[i++] = 'w';
         rotor[i] = 'y';
-<<<<<<< Upstream, based on branch 'JavaDev' of https://github.com/PatrikEigenmann/Java
-=======
-
-        //JMessageHandler.writeMessage("Finished Initializing Large Rotor!");
->>>>>>> e8f7892 Try to get from Repository.
     }
 }
