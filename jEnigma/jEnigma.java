@@ -44,8 +44,8 @@
  * Thu 2024-10-03 Re-programmed the application name & version number.							Version: 00.18
  * Thu 2024-10-10 Class LogManager implemented.													Version: 00.19
  * Sat 2024-10-12 Logged all methods.															Verison: 00.20
-<<<<<<< Upstream, based on branch 'JavaDev' of https://github.com/PatrikEigenmann/Java
  * Wed 2024-10-16 Implemented the Logging flag.													Version: 00.21
+ * Sat 2024-10-19 Fixed a mistake in LargeRotor.java.											Version: 00.22
  * -----------------------------------------------------------------------------------------------------------
  * To Do:
  * Implementing a Configuration System.																-> Done
@@ -110,7 +110,7 @@ public class jEnigma extends JFrame implements IVersionable {
      * going from version 01.02 to 01.03 indicating a minor ubdate that enhances the existing version without
      * breaking the compatibility. 
 	 */
-	private static final int appMinor = 4;
+	private static final int appMinor = 5;
 	
 	/**
      * Provides the name of the application as defined in the configuration, along with the current
@@ -138,10 +138,11 @@ public class jEnigma extends JFrame implements IVersionable {
 	 */
 	public static String getVersion() {
 		
-		/* Write an info message into the log file. */
+		/** Write an info message into the log file. */
 		LogManager.writeMessage("Version String Created.", LogManager.INFO, jEnigma.class, jEnigma.class);
+
 		/** Return a formatted String: Component: component name, Version Major #, Minor # */
-		return VersionManager.getInstance(jEnigma.class.getName() , 0, 21).toString();
+		return VersionManager.getInstance(jEnigma.class.getName() , 0, 22).toString();
 	}
 	
 	/**
@@ -155,12 +156,12 @@ public class jEnigma extends JFrame implements IVersionable {
 	private JTextArea encrypted;
 
 	/**
-	 * File extention for the message file.
+	 * File extension for the message file.
 	 */
 	private final String decryptExtention = ".txt";
 
 	/**
-	 * File extention for the encrypted file.
+	 * File extension for the encrypted file.
 	 */
 	private final String encryptExtention = ".enigma";
 

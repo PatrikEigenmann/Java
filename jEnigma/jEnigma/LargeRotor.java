@@ -11,7 +11,8 @@
  * Change Log:
  * Sun 2024-09-01 File created.																Version: 00.01
  * Sun 2024-09-01 Version control & getVersion implemented.									Version: 00.02
-* Fri 2024-09-27 Extended the alphabet to all alphanumeric characters.						Version: 00.03
+ * Fri 2024-09-27 Extended the alphabet to all alphanumeric characters.						Version: 00.03
+ * Sat 2024-10-28 Just realized that I forgot to implement IVersionable.					Version: 00.04
  * -------------------------------------------------------------------------------------------------------*/
 package jEnigma;
 
@@ -24,7 +25,7 @@ import samael.*;
  * class includes methods to rotate the rotor, reset it, and find the index of a character. The overwritten
  * setAlphabet method is specific for the SmallRotor.
  */
-public class LargeRotor extends Rotor {
+public class LargeRotor extends Rotor implements IVersionable {
     
 	/**
 	 * Override this method from the implemented VersionControl interface.
@@ -37,7 +38,7 @@ public class LargeRotor extends Rotor {
 	public static String getVersion() {
 		
 		/** Return a formatted String: Component: component name, Version Major #, Minor # */
-		return VersionManager.getInstance(LargeRotor.class.getName(), 0, 3).toString();
+		return VersionManager.getInstance(LargeRotor.class.getName(), 0, 4).toString();
 	}
 	
 	/**
